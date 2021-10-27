@@ -3,7 +3,8 @@ import "./App.css";
 import { Greet } from "components/Greet";
 import { Person } from "components/Person";
 import { List } from "components/List";
-
+import { Heading } from "components/Heading";
+import { Button } from "components/Button";
 function App() {
   const personData = {
     firstName: "Aman",
@@ -23,12 +24,18 @@ function App() {
       last: "Kumar",
     },
   ];
-  
+
   return (
     <div className="App">
+      <Button
+        handleClick={(event, id) => {
+          return console.log("Hello Iam Clicked", id);
+        }}
+      ></Button>
       {/* <Greet sirName="Sharma" messages={10} isLoggedIn={true} /> */}
       {/* <Person personInfo={personData} /> */}
-      <List list={listData} />
+      {/* <List list={listData} /> */}
+      {/* <Heading>Welcome to heading </Heading> */}
     </div>
   );
 }

@@ -1,5 +1,5 @@
 type listData = {
-  list: { first: string; last: string }[];
+  list: { first: string; last: string; }[];
 };
 
 export const List = (props: listData) => {
