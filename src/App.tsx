@@ -5,6 +5,9 @@ import { Person } from "components/Person";
 import { List } from "components/List";
 import { Heading } from "components/Heading";
 import { Button } from "components/Button";
+import { LoggedIn } from "components/LoggedIn";
+import { User } from "components/User";
+
 function App() {
   const personData = {
     firstName: "Aman",
@@ -27,11 +30,13 @@ function App() {
 
   return (
     <div className="App">
-      <Button
+      <User />
+      {/* <LoggedIn /> */}
+      {/* <Button
         handleClick={(event, id) => {
           return console.log("Hello Iam Clicked", id);
         }}
-      ></Button>
+      ></Button> */}
       {/* <Greet sirName="Sharma" messages={10} isLoggedIn={true} /> */}
       {/* <Person personInfo={personData} /> */}
       {/* <List list={listData} /> */}
