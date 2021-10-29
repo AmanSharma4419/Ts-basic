@@ -7,7 +7,9 @@ import { Heading } from "components/Heading";
 import { Button } from "components/Button";
 import { LoggedIn } from "components/LoggedIn";
 import { User } from "components/User";
-
+import Counter from "components/Counter";
+import { Profile } from "components/auth/Profile";
+import { Private } from "components/auth/Private";
 function App() {
   const personData = {
     firstName: "Aman",
@@ -30,7 +32,9 @@ function App() {
 
   return (
     <div className="App">
-      <User />
+      <Private isLoggedIn={true} component={Profile} />
+      {/* <Counter name="Aman" /> */}
+      {/* <User /> */}
       {/* <LoggedIn /> */}
       {/* <Button
         handleClick={(event, id) => {
