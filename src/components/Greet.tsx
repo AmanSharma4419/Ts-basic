@@ -1,6 +1,6 @@
 type Greet = {
   name?: string;
-  sirName: string;
+  sirName?: never;
   messages: number;
   isLoggedIn: boolean;
 };

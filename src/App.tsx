@@ -10,6 +10,7 @@ import { User } from "components/User";
 import Counter from "components/Counter";
 import { Profile } from "components/auth/Profile";
 import { Private } from "components/auth/Private";
+import { Custom } from "components/Custom";
 function App() {
   const personData = {
     firstName: "Aman",
@@ -32,7 +33,7 @@ function App() {
 
   return (
     <div className="App">
-      <Private isLoggedIn={true} component={Profile} />
+      {/* <Private isLoggedIn={true} component={Profile} /> */}
       {/* <Counter name="Aman" /> */}
       {/* <User /> */}
       {/* <LoggedIn /> */}
@@ -41,7 +42,8 @@ function App() {
           return console.log("Hello Iam Clicked", id);
         }}
       ></Button> */}
-      {/* <Greet sirName="Sharma" messages={10} isLoggedIn={true} /> */}
+      <Greet messages={10} isLoggedIn={true} />
+      {/* <Custom messages={10} isLoggedIn={true} /> */}
       {/* <Person personInfo={personData} /> */}
       {/* <List list={listData} /> */}
       {/* <Heading>Welcome to heading </Heading> */}
